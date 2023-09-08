@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo panier</title>
+</head>
+
+<body>
+    <h1>Exo Panier V2</h1>
+    <h2>Articles</h2>
+    <table id="articles">
+        <thead>
+            <tr>
+                <th>Article</th>
+                <th>Prix</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chaise</td>
+                <td>25</td>
+                <td><input type="button" value="Ajouter" onclick="addToCart(1)"></td>
+                <td><input type="button" value="Retirer" onclick="delToCart(1)"></td>
+            </tr>
+            <tr>
+                <td>Table</td>
+                <td>50</td>
+                <td><input type="button" value="Ajouter" onclick="addToCart(2)"></td>
+                <td><input type="button" value="Retirer" onclick="delToCart(2)"></td>
+            </tr>
+            <tr>
+                <td>Meuble TV</td>
+                <td>100</td>
+                <td><input type="button" value="Ajouter" onclick="addToCart(3)"></td>
+                <td><input type="button" value="Retirer" onclick="delToCart(3)"></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Panier</h2>
+    <table id="panier">
+        <thead>
+            <tr>
+                <th>Article</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <label for="prix">Prix : </label>
+    <input type="text" id="prix" disabled>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
